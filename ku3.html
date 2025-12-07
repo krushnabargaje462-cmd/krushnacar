@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maruti Cars Price</title>
+  <style>
+    /* Reset & base styles */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      padding-bottom: 80px; /* Prevent footer overlap */
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Card grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .card h2 {
+      margin: 8px 0;
+      color: #007bff;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 6px 0;
+      color: #444;
+    }
+
+    .location {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .buy-now-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #1a73e8, #0b57d0);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      transition: all 0.25s ease-in-out;
+      margin-top: auto;
+    }
+
+    .buy-now-btn:hover {
+      background: linear-gradient(135deg, #0b57d0, #0842a0);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    }
+
+    .buy-now-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maruti Cars Price List</h1>
+    <p>Ex-Showroom Prices in Mumbai</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Maruti Alto K10 -->
+    <div class="card">
+      <img src="alto k10.jpg" alt="Maruti Alto K10">
+      <h2>Maruti Alto K10</h2>
+      <p class="price">₹3.70 - 5.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=alto-k10" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti S-Presso -->
+    <div class="card">
+      <img src="spresso.jpg" alt="Maruti S-Presso">
+      <h2>Maruti S-Presso</h2>
+      <p class="price">₹3.50 - 5.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=spresso" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Celerio -->
+    <div class="card">
+      <img src="celerio.jpg" alt="Maruti Celerio">
+      <h2>Maruti Celerio</h2>
+      <p class="price">₹5.35 - 7.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=celerio" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Wagon R -->
+    <div class="card">
+      <img src="wagonr.jpg" alt="Maruti Wagon R">
+      <h2>Maruti Wagon R</h2>
+      <p class="price">₹4.99 - 7.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=wagonr" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Swift -->
+    <div class="card">
+      <img src="swift.jpg" alt="Maruti Swift">
+      <h2>Maruti Swift</h2>
+      <p class="price">₹5.79 - 9.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=swift" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Dzire -->
+    <div class="card">
+      <img src="dizire.jpg" alt="Maruti Dzire">
+      <h2>Maruti Dzire</h2>
+      <p class="price">₹6.26 - 9.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=dzire" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Baleno -->
+    <div class="card">
+      <img src="baleno.jpg" alt="Maruti Baleno">
+      <h2>Maruti Baleno</h2>
+      <p class="price">₹6.61 - 9.80 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=baleno" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti FRONX -->
+    <div class="card">
+      <img src="fronx.jpg" alt="Maruti FRONX">
+      <h2>Maruti FRONX</h2>
+      <p class="price">₹6.85 - 11.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=fronx" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Brezza -->
+    <div class="card">
+      <img src="breeza.jpg" alt="Maruti Brezza">
+      <h2>Maruti Brezza</h2>
+      <p class="price">₹8.26 - 14.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=brezza" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Maruti Ertiga -->
+    <div class="card">
+      <img src="ertiga.jpg" alt="Maruti Ertiga">
+      <h2>Maruti Ertiga</h2>
+      <p class="price">₹8.80 - 13.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=ertiga" class="buy-now-btn">Buy Now</a>
+</div>
+
+  <footer>
+    © 2025 Tata Cars Showcase | Designed with ❤️
+  </footer>
+
+</body>
+</html>

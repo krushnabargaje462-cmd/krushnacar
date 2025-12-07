@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tata Cars Price</title>
+  <style>
+    /* Reset & base styles */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      padding-bottom: 80px; /* Prevent footer overlap */
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Card grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .card h2 {
+      margin: 8px 0;
+      color: #007bff;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 6px 0;
+      color: #444;
+    }
+
+    .location {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .buy-now-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #1a73e8, #0b57d0);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      transition: all 0.25s ease-in-out;
+      margin-top: auto;
+    }
+
+    .buy-now-btn:hover {
+      background: linear-gradient(135deg, #0b57d0, #0842a0);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    }
+
+    .buy-now-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tata Cars Price List</h1>
+    <p>Ex-Showroom Prices in Mumbai</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Example Car Card -->
+    <div class="card">
+      <img src="punch.jpg" alt="Tata Punch">
+      <h2>Tata Punch</h2>
+      <p class="price">₹5.50 - 9.30 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=punch" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="tiago.jpg" alt="Tata Tiago">
+      <h2>Tata Tiago</h2>
+      <p class="price">₹4.57 - 7.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=tiago" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="tiago.jpg" alt="Tata Tiago NRG">
+      <h2>Tata Tiago NRG</h2>
+      <p class="price">₹6.70 - 8.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=tiago-nrg" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="altroz.jpg" alt="Tata Altroz">
+      <h2>Tata Altroz</h2>
+      <p class="price">₹6.60 - 10.80 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=altroz" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="nexon.jpg" alt="Tata Nexon">
+      <h2>Tata Nexon</h2>
+      <p class="price">₹8.00 - 15.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=nexon" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="nexon.jpg" alt="Tata Nexon EV">
+      <h2>Tata Nexon EV</h2>
+      <p class="price">₹14.50 - 19.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=nexon-ev" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="harrier.jpg" alt="Tata Harrier">
+      <h2>Tata Harrier</h2>
+      <p class="price">₹15.50 - 25.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=harrier" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="safari.jpg" alt="Tata Safari">
+      <h2>Tata Safari</h2>
+      <p class="price">₹16.00 - 27.00 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=safari" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="tigor.jpg" alt="Tata Tigor">
+      <h2>Tata Tigor</h2>
+      <p class="price">₹6.30 - 9.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=tigor" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="tigor.jpg" alt="Tata Tigor EV">
+      <h2>Tata Tigor EV</h2>
+      <p class="price">₹12.00 - 13.50 Lakh</p>
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=tigor-ev" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="tiago.jpg" alt="Tata Tiago EV">
+      <h2>Tata Tiago EV</h2>
+      <p class="price">₹8.70 - 12.00 Lakh</p>s
+      <p class="location">On Road Price, Mumbai</p>
+      <a href="https://your-checkout-link.com?item=tigor-ev" class="buy-now-btn">Buy Now</a>
+    </div>
+</div>
+
+  <footer>
+    © 2025 Tata Cars Showcase | Designed with❤️
+  </footer>
+
+</body>
+</html>

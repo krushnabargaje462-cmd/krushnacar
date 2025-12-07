@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Most Searched Cars</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* CarWale-style Navigation Bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e53935;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 5px 10px;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+    .icons {
+      display: flex;
+      gap: 15px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    header.banner {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header.banner img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    nav.brand-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav.brand-links a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    nav.brand-links a:hover {
+      text-decoration: underline;
+    }
+
+    section.intro {
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #e9f5ff;
+    }
+
+    section.car-table {
+      padding: 2rem;
+    }
+
+    section.car-table h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+
+    table th, table td {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #0077cc;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      nav.brand-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      table th, table td {
+        font-size: 0.9rem;
+      }
+   
+
+  </style>
+</head>
+<body>
+
+  
+  <div class="navbar">
+    <div class="logo">Car</div>
+    <div class="nav-links">
+      <a href="#">NEW CARS</a>
+      <a href="#">USED CARS</a>
+      <a href="#">REVIEWS & NEWS</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      🔍
+    </div>
+    <div class="icons">
+      📍 🔔 👤 ☰
+    </div>
+  </div>
+
+  <header class="banner">
+    <h1>Most Searched Cars</h1>
+  
+  </header>
+
+  <nav class="brand-links">
+    <a href="krushna bargaje.html">Mahindra & Mahindra</a>
+    <a href="!DOCTYPE2.html">Tata Motors</a>
+    <a href="ku3.html">Maruti Suzuki</a>
+    <a href="kru 2.html">Hyundai</a>
+  </nav>
+
+  <section class="intro">
+    <p>
+      Are you planning for a car? With so many options available, finding the right one can be tough.
+      We've compiled a complete list of new cars to help you choose what suits your needs.
+    </p>
+  </section>
+
+  <section class="car-table">
+    <h2>Tata & Mahindra</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Brand</th>
+          <th>Name</th>
+          <th>Ex-Showroom Price</th>
+          <th>On-Road Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Tata</td>
+          <td>Nexon</td>
+          <td>₹8.00 Lakh</td>
+          <td>₹9.50 Lakh</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mahindra</td>
+          <td>Scorpio-N</td>
+          <td>₹13.00 Lakh</td>
+          <td>₹15.00 Lakh</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
